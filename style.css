@@ -236,6 +236,8 @@ main {
 @media (max-width: 800px) {
     main {
       flex-wrap: nowrap;
+      position: absolute;
+      left: 50%;
     }
     html {
       font-size: 55%;
