@@ -1,6 +1,5 @@
 'use strict';
-  
-}  
+
 let playerOneName = document.querySelector("#name--0")
 let playerTwoName = document.querySelector("#name--1")
 const newGameButton = document.querySelector(".btn--new");
