@@ -236,10 +236,10 @@ main {
 @media (max-width: 800px) {
     main {
       flex-wrap: nowrap;
-      position: absolute;
-      left: 50%;
+      position: relative;
+      left: 25%;
     }
     html {
-      font-size: 55%;
+      font-size: 20%;
       box-sizing: border-box;
     }
