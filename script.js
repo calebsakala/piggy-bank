@@ -1,6 +1,8 @@
 'use strict';
 
-if (navigator.userAgentData.mobile) {
+const is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
+
+if (is_mobile) {
   alert("Gaming experience on mobile is best experienced with a rotated screen. 🔄")
 }  
 
