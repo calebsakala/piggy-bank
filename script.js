@@ -128,9 +128,9 @@ const rollTheDice = function () {
     }
     image.src = `dice-${roll}.png`
     if (roll === 1) {
-      switchActivePlayer()
+      switchActivePlayer();
     } else {
-      addToCurrent(roll)
+      addToCurrent(roll);
     }
   }
 }
