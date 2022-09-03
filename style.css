@@ -235,8 +235,8 @@ main {
 /* Formatting for mobile devices */
 @media (max-width: 800px) {
     main {
-      flex-wrap: nowrap;
-      flex-basis: 33%;
+      flex-wrap: wrap;
+      flex-basis: fit-content;
     }
     html {
       font-size: 20%;
