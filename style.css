@@ -236,9 +236,9 @@ main {
 @media (max-width: 800px) {
     main {
       flex-wrap: wrap;
-      flex-basis: fit-content;
+      flex-basis: auto;
     }
     html {
-      font-size: 20%;
+      font-size: 30%;
       box-sizing: border-box;
     }
