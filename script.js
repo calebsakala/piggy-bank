@@ -1,5 +1,9 @@
 'use strict';
 
+if (navigator.userAgentData.mobile) {
+  alert("Gaming experience on mobile is best experienced with a rotated screen. 🔄")
+}  
+
 let playerOneName = document.querySelector("#name--0")
 let playerTwoName = document.querySelector("#name--1")
 const newGameButton = document.querySelector(".btn--new");
