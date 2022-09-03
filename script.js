@@ -147,8 +147,9 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 }
 
-if (navigator.userAgentData.mobile) {
+if (window.navigator.userAgentData.mobile) {
   alert("On mobile phones, experience is best enjoyed with a rotated screen. 🔄")
+  document.getElementById("viewport").setAttribute("content", "width=1024, initial-scale=0, maximum-scale=1.0, minimum-scale=0.25, user-scalable=yes");
 }
 
 
