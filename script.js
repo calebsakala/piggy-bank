@@ -130,7 +130,7 @@ const rollTheDice = function () {
     if (roll === 1) {
       switchActivePlayer()
     } else {
-      addtoCurrent(roll)
+      addToCurrent(roll)
     }
   }
 }
