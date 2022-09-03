@@ -147,6 +147,11 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 }
 
+if (navigator.userAgentData.mobile) {
+  alert("On mobile phones, experience is best enjoyed with a rotated screen. 🔄")
+}
+
+
 askForNames()
 rollDiceButton.addEventListener('click', rollTheDice);
 holdScoreButton.addEventListener('click', holdTheScore)
