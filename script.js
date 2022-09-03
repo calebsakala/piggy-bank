@@ -1,10 +1,6 @@
 'use strict';
 
-const is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
-
-if (is_mobile) {
-  alert("Gaming experience on mobile is best experienced with a rotated screen. 🔄")
-}  
+alert("Gaming experience on mobile is best experienced with a rotated screen. 🔄")  
 
 let playerOneName = document.querySelector("#name--0")
 let playerTwoName = document.querySelector("#name--1")
