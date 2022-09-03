@@ -36,6 +36,7 @@ const askForNames = function () {
 
 
 const resetTheGame = function () {
+  image.classList.add("hidden")
   if (playerOne.classList.contains("player--winner")) {
     playerOne.classList.remove("player--winner")
   } else if (playerTwo.classList.contains("player--winner")) {
@@ -122,6 +123,9 @@ const rollTheDice = function () {
   const gameOver = checkForWinner()
   if (!gameOver) {
     const roll = Math.floor(Math.random() * 6) + 1;
+    if (image.classList.contains("hidden")) {
+      image.classList.remove("hidden"); 
+    }
     switch(roll) {
       case 1:
         image.src = "dice-1.png";
