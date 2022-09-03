@@ -1,6 +1,4 @@
 'use strict';
-
-let userprompted = prompt("Gaming experience on mobile is best experienced with a rotated screen. 🔄")
   
 }  
 let playerOneName = document.querySelector("#name--0")
