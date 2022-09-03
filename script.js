@@ -1,7 +1,7 @@
 'use strict';
 
-const playerOneName = document.querySelector("#name--0")
-const playerTwoName = document.querySelector("#name--1")
+let playerOneName = document.querySelector("#name--0")
+let playerTwoName = document.querySelector("#name--1")
 const newGameButton = document.querySelector(".btn--new");
 const rollDiceButton = document.querySelector(".btn--roll");
 const holdScoreButton = document.querySelector(".btn--hold");
@@ -14,13 +14,24 @@ let playerOneCurrent = document.querySelector("#current--0");
 let playerTwoCurrent = document.querySelector("#current--1");
 let p1RunningScore = Number(playerOneCurrent.textContent);
 let p2RunningScore = Number(playerTwoCurrent.textContent);
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.close-modal');
+const btnOpenModal = document.querySelector('.show-modal');
 
 
 const askForNames = function () {
-  let player1 = prompt("What is your name, player 1?");
-  let player2 = prompt("What is your name, player 2?");
-  playerOneName.textContent = player1;
-  playerTwoName.textContent = player2;
+  let player1 = prompt(`What is your name? (Leave blank to accept "${playerOneName.textContent}")`);
+  let player2 = prompt(`What is your name? (Leave blank to accept "${playerTwoName.textContent}")`);
+  if (player1) {
+    playerOneName.textContent = player1;
+  } else {
+  }
+  if (player2) {
+    playerTwoName.textContent = player2;
+  } else {
+
+  }
 }
 
 
@@ -141,7 +152,26 @@ const rollTheDice = function () {
 }
 
 
+const openModal = function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+}
+
+
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+}
+
 askForNames()
 rollDiceButton.addEventListener('click', rollTheDice);
 holdScoreButton.addEventListener('click', holdTheScore)
 newGameButton.addEventListener('click', resetTheGame)
+btnCloseModal.addEventListener('click', closeModal)
+overlay.addEventListener('click', closeModal)
+btnOpenModal.addEventListener('click', openModal)
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+})

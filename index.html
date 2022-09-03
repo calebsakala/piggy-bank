@@ -15,12 +15,13 @@
     <title>Pig Game</title>
   </head>
   <body>
+    <button class="show-modal">How to Play?</button>
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">0</p>
         <div class="current">
-          <p class="current-label">Current</p>
+          <p class="current-label">Piggy Bank</p>
           <p class="current-score" id="current--0">0</p>
         </div>
       </section>
@@ -28,7 +29,7 @@
         <h2 class="name" id="name--1">Player 2</h2>
         <p class="score" id="score--1">0</p>
         <div class="current">
-          <p class="current-label">Current</p>
+          <p class="current-label">Piggy Bank</p>
           <p class="current-score" id="current--1">0</p>
         </div>
       </section>
@@ -36,7 +37,35 @@
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--hold">📥 Keep</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>About + Rules &#x1F920</h1>
+        <p>
+          <em
+            >The Year is 1936: you are a starving farmhand in the USA. The legalisation of gambling
+            has led to casinos popping up everywhere - everybody's desperate to make a buck. 
+            That's why you're here -- in the&nbsp;Equinox&nbsp;Casino.<br />
+            There is one goal: Get 100 tokens before your opponent.</em
+          >
+          <br /><br />
+          <span class="rules"
+            ><strong>RULES:</strong><br />
+            - Press the button labelled '🎲 Roll dice' to roll the die.<br />
+
+            - The number on the die will dictate how many tokens are added to
+            your piggy bank.<br />
+            - Press '📥 Keep' to store your tokens permanently. Choosing to keep
+            will pass the turn to the next player.<br />
+            - You can roll as many times as you like without keeping, but if you
+            roll a 1...<br />
+            - Your piggy bank will be emptied. And all tokens that haven't been
+            permanently stored will be forgotten.<br /><br />
+            Challenge your friends! & May the odds fall in your favour!</span
+          >
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
     <script src="script.js"></script>
   </body>
