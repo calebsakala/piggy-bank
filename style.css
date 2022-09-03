@@ -238,7 +238,10 @@ main {
       flex-wrap: wrap;
       flex-basis: auto;
       position: relative;
-      left: 10px;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
     }
     html {
       font-size: 60%;
