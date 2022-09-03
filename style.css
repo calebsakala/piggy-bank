@@ -231,3 +231,13 @@ main {
 .show-modal:active {
   opacity: 0.8;
 }
+
+/* Formatting for mobile devices */
+@media (max-width: 800px) {
+    main {
+      flex-wrap: nowrap;
+    }
+    html {
+      font-size: 55%;
+      box-sizing: border-box;
+    }
