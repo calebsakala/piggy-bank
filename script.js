@@ -1,6 +1,8 @@
 'use strict';
 
-alert("Gaming experience on mobile is best experienced with a rotated screen. 🔄")  
+if (navigator.userAgentData.mobile) {
+  prompt("Gaming experience on mobile is best experienced with a rotated screen. 🔄")
+}  
 
 let playerOneName = document.querySelector("#name--0")
 let playerTwoName = document.querySelector("#name--1")
