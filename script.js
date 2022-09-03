@@ -126,31 +126,11 @@ const rollTheDice = function () {
     if (image.classList.contains("hidden")) {
       image.classList.remove("hidden"); 
     }
-    switch(roll) {
-      case 1:
-        image.src = "dice-1.png";
-        switchActivePlayer()
-        break;
-      case 2:
-        image.src = "dice-2.png";
-        addToCurrent(roll);
-        break;
-      case 3:
-        image.src = "dice-3.png";
-        addToCurrent(roll);
-        break;
-      case 4:
-        image.src = "dice-4.png";
-        addToCurrent(roll);
-        break;
-      case 5:
-        image.src = "dice-5.png";
-        addToCurrent(roll);
-        break;
-      case 6:
-        image.src = "dice-6.png";
-        addToCurrent(roll);
-        break;
+    image.src = `dice-${roll}.png`
+    if (roll === 1) {
+      switchActivePlayer()
+    } else {
+      addtoCurrent(roll)
     }
   }
 }
