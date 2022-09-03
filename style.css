@@ -231,3 +231,8 @@ main {
 .show-modal:active {
   opacity: 0.8;
 }
+
+/* Formatting for mobile devices */
+@media (max-width: 800px) {
+  scale: 0.5;
+}
