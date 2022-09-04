@@ -242,4 +242,8 @@ main {
   font-size: 30%;
   box-sizing: border-box;
   }
+  overlay {
+  height: 200%;
+  width: 200%;
+  }
 }
