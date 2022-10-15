@@ -237,6 +237,10 @@ main {
 
 /* Formatting for mobile devices */
 @media (min-height: 750px) and (max-height: 950px) {
+  body {
+    height: 85vh;
+  }
+  
   main {
     position: absolute;
     flex-direction: column;
@@ -317,6 +321,10 @@ main {
 
 
 @media (min-height: 0px) and (max-height: 750px) {
+  body {
+    height: 85vh;
+  }
+  
   main {
     position: absolute;
     flex-direction: column;
